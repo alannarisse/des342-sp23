@@ -1,0 +1,27 @@
+body {
+  font-size: 20px;
+}
+section {
+  border: 4px solid purple;
+  display: flex;
+}
+.error {
+  color: red;
+}
+section div:nth-child(1) {
+  flex: 120;
+  border: 4px solid teal;
+}
+section div:nth-child(2) {
+  flex: 60;
+  border: 4px solid fuchsia;
+}
+article {
+  display: flex;
+}
+.grog {
+  background-color: aquamarine;
+}
+#kitties {
+  border: 6px dotted salmon;
+}
