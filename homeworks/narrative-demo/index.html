@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narrative</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mochi Tire Stabber</h1>
+    <div id="section-one" class="">
+      <img src="images/mochi-1.png" alt="" />
+    </div>
+    <div id="section-two" class="hide">
+      <img src="images/mochi-2.png" alt="" />
+    </div>
+    <div id="section-three" class="hide">
+      <img src="images/mochi-3.png" alt="" />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $('#section-one').click(function () {
+        $('#section-one').toggleClass('hide')
+        $('#section-two').toggleClass('hide')
+      })
+
+      $('#section-two').click(function () {
+        $('#section-two').toggleClass('hide')
+        $('#section-three').toggleClass('hide')
+      })
+      $('#section-three').click(function () {
+        $('#section-three').toggleClass('hide')
+        $('#section-one').toggleClass('hide')
+      })
+    </script>
+  </body>
+</html>
