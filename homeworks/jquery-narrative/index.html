@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narrative</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>I'm a header!</h1>
+    <div id="scene-one" class="scene">
+      <img src="images/mochi-1.png" alt="" />
+    </div>
+    <div id="scene-two" class="scene hide">
+      <img src="images/mochi-2.png" alt="" />
+    </div>
+    <div id="scene-three" class="scene hide">
+      <img src="images/mochi-3.png" alt="" />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      // $('.scene').click(function () {
+      //   $('.scene').not(this).addClass('hide')
+      //   $(this).removeClass('hide')
+      // })
+
+      $('#scene-one').click(function () {
+        $('#scene-one').toggleClass('hide') // this hides one because it's showing. make sure you have a css class called hide that has a display:none;
+        $('#scene-two').toggleClass('hide') // this shows two because it's hiding
+      })
+      $('#scene-two').click(function () {
+        $('#scene-two').toggleClass('hide')
+        $('#scene-three').toggleClass('hide')
+      })
+      $('#scene-three').click(function () {
+        $('#scene-three').toggleClass('hide')
+        $('#scene-one').toggleClass('hide')
+      })
+    </script>
+  </body>
+</html>
